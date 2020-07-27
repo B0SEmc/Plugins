@@ -1,2 +1,2 @@
 # Coding
-This is where me and my friends share our code
+This is where me and my friends share our code.
