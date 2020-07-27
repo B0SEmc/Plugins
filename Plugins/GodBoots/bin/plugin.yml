@@ -1,0 +1,9 @@
+main: me.colonel26.GodBoots.Main
+name: GodBoots
+version: 1.6.1
+author: colonel26
+api-version: 1.13
+
+commands:
+  GodBoots:
+    aliases: gb
