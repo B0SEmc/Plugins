@@ -1,0 +1,9 @@
+main: me.colonel26.GodArmor.Main
+name: GodArmor
+version: 1.0
+author: colonel26
+api-version: 1.13
+
+commands:
+  GodAromor:
+    aliases: ga
