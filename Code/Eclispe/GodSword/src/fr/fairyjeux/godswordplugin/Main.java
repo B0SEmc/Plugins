@@ -7,6 +7,7 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		System.out.println("Thank for download GodSword plugin");
+		getCommand("godsword").setExecutor(new CommandGodSword());
 		super.onEnable();
 	}
 	

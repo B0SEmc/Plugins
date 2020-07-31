@@ -60,6 +60,8 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\arman\Documents\repository\Plugins\Code\GodSword\GodSword.jar"/>
+			<item value="C:\Users\arman\Documents\repository\Plugins\Code\Server\plugins\GodSword.jar"/>
 			<item value="C:\Users\arman\Documents\repository\GodSword\GodSword.jar"/>
 			<item value="C:\Users\arman\Documents\repository\Code\Server\plugins\GodSword.jar"/>
 		</list>
