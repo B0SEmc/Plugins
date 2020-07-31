@@ -1,0 +1,21 @@
+lastAccountName: colonel26
+timestamps:
+  login: 1595973937478
+  logout: 1595974371034
+  lastteleport: 1595258031599
+ipAddress: 127.0.0.1
+godmode: false
+logoutlocation:
+  world: world
+  x: 66.49089161347936
+  y: 78.0
+  z: -1944.6657122301986
+  yaw: 262.1906
+  pitch: 27.481579
+lastlocation:
+  world: world
+  x: -508.1360457715522
+  y: 64.0
+  z: -1494.904612498834
+  yaw: 3.777832
+  pitch: -2.0387228
