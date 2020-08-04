@@ -32,7 +32,7 @@ public class CommandGodSword implements CommandExecutor {
 			customSword.setItemMeta(customM); 
 			player.getInventory().setItemInMainHand(customSword);
 			player.updateInventory();
-			player.sendMessage(ChatColor.AQUA + "Your GodSword as gived !");
+			player.sendMessage(ChatColor.AQUA + "Your GodSword as been gived !");
 		}
 		
 		return false;
