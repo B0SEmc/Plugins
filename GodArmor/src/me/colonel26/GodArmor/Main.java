@@ -52,6 +52,7 @@ public class Main extends JavaPlugin implements Listener{
                 world.dropItemNaturally(loc, getitem3());
                 player.sendMessage(ChatColor.RED + "Votre armure est tombees par terre");
             }
+            player.getInventory().addItem(getsword());
             player.getInventory().addItem(getitem());
             player.getInventory().addItem(getitem1());
             player.getInventory().addItem(getitem2());
@@ -62,12 +63,34 @@ public class Main extends JavaPlugin implements Listener{
         return false;
     }
 
+    public ItemStack getsword() {
+
+        ItemStack sword = new ItemStack(Material.DIAMOND_SWORD);
+        ItemMeta meta = sword.getItemMeta();
+
+        meta.setDisplayName(ChatColor.GOLD + "God Sword");
+        List<String> lore = new ArrayList<String>();
+        lore.add("");
+        lore.add(ChatColor.GOLD + "Elle est incroyable !");
+        meta.setLore(lore);
+
+        meta.addEnchant(Enchantment.DAMAGE_ALL, 150, true);
+        meta.addEnchant(Enchantment.FIRE_ASPECT, 20, true);
+        meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+        meta.addEnchant(Enchantment.DURABILITY, 500, true);
+
+        sword.setItemMeta(meta);
+
+        return sword;
+    }
+
     public ItemStack getitem() {
 
         ItemStack boots = new ItemStack(Material.DIAMOND_BOOTS);
         ItemMeta meta = boots.getItemMeta();
 
-        meta.setDisplayName(ChatColor.GOLD + "Boots Incroyables");
+        meta.setDisplayName(ChatColor.GOLD + "God Boots");
         List<String> lore = new ArrayList<String>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Elles sont incroyables !");
@@ -89,7 +112,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemStack LEGGINGS = new ItemStack(Material.DIAMOND_LEGGINGS);
         ItemMeta meta = LEGGINGS.getItemMeta();
 
-        meta.setDisplayName(ChatColor.GOLD + "LEGGINGS Incroyables");
+        meta.setDisplayName(ChatColor.GOLD + "God Leggings");
         List<String> lore = new ArrayList<String>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Ils sont incroyables !");
@@ -108,7 +131,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemStack CHESTPLATE = new ItemStack(Material.DIAMOND_CHESTPLATE);
         ItemMeta meta = CHESTPLATE.getItemMeta();
 
-        meta.setDisplayName(ChatColor.GOLD + "Chestplate Incroyable");
+        meta.setDisplayName(ChatColor.GOLD + "God Chestplate");
         List<String> lore = new ArrayList<String>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Il est incroyables !");
@@ -129,7 +152,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemStack Helmet = new ItemStack(Material.DIAMOND_HELMET);
         ItemMeta meta = Helmet.getItemMeta();
 
-        meta.setDisplayName(ChatColor.GOLD + "Helmet Incroyable");
+        meta.setDisplayName(ChatColor.GOLD + "God Helmet");
         List<String> lore = new ArrayList<String>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Il sont incroyables !");
@@ -154,17 +177,17 @@ public class Main extends JavaPlugin implements Listener{
     public void onJump(PlayerMoveEvent event) {
         Player player = (Player) event.getPlayer();
         if (player.getInventory().getBoots() != null)
-            if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("Helmet Incroyable"))
+            if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("God Boots"))
                 if (player.getInventory().getBoots().getItemMeta().hasLore())
                     if(event.getFrom().getY() < event.getTo().getY() && player.getLocation().subtract(0, 1, 0).getBlock().getType() != Material.AIR)
-                        player.setVelocity(player.getLocation().getDirection().multiply(1.5).setY(1));
+                        player.setVelocity(player.getLocation().getDirection().multiply(2).setY(1));
     }
 
     @EventHandler
     public void SpeedEffect(PlayerMoveEvent event) {
         Player player = (Player) event.getPlayer();
         if (player.getInventory().getBoots() != null)
-            if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("Boots Incroyables"))
+            if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("God Boots"))
                 if (player.getInventory().getBoots().getItemMeta().hasLore()) {
                     player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 80, 11));
                     player.setFoodLevel(20);
@@ -178,7 +201,7 @@ public class Main extends JavaPlugin implements Listener{
             Player player = (Player) event.getEntity();
             if (event.getCause() == DamageCause.FALL) {
                 if (player.getInventory().getBoots() != null)
-                    if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("Boots Incroyables"))
+                    if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("God Boots"))
                         if (player.getInventory().getBoots().getItemMeta().hasLore()) {
                             event.setCancelled(true);
                         }
