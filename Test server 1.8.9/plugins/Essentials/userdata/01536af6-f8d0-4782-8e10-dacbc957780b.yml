@@ -1,0 +1,20 @@
+lastAccountName: abcu
+timestamps:
+  login: 1619293563410
+  logout: 1619294019807
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 226.15258928641958
+  y: 64.0
+  z: 168.08699041591828
+  yaw: -95.944954
+  pitch: 7.3259606
+godmode: false
+logoutlocation:
+  world: world
+  x: 291.8678400816593
+  y: 65.0
+  z: 99.42167524951624
+  yaw: 321.74597
+  pitch: -0.24024917

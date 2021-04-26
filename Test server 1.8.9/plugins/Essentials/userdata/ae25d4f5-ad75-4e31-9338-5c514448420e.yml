@@ -1,0 +1,23 @@
+lastAccountName: B0SE
+timestamps:
+  login: 1619380781292
+  lastteleport: 1619380093469
+  logout: 1619380178549
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 294.81369640525526
+  y: 68.0
+  z: -34.98227085362384
+  yaw: 12.788937
+  pitch: -0.20205928
+afk: false
+logoutlocation:
+  world: world
+  x: 294.81369640525526
+  y: 68.0
+  z: -34.98227085362384
+  yaw: 12.788937
+  pitch: -0.20205928
+godmode: false
+nickname: B0SE
