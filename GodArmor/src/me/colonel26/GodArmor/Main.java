@@ -69,7 +69,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemMeta meta = sword.getItemMeta();
 
         meta.setDisplayName(ChatColor.GOLD + "God Sword");
-        List<String> lore = new ArrayList<String>();
+        List<String> lore = new ArrayList<>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Elle est incroyable !");
         meta.setLore(lore);
@@ -91,7 +91,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemMeta meta = boots.getItemMeta();
 
         meta.setDisplayName(ChatColor.GOLD + "God Boots");
-        List<String> lore = new ArrayList<String>();
+        List<String> lore = new ArrayList<>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Elles sont incroyables !");
         meta.setLore(lore);
@@ -113,7 +113,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemMeta meta = LEGGINGS.getItemMeta();
 
         meta.setDisplayName(ChatColor.GOLD + "God Leggings");
-        List<String> lore = new ArrayList<String>();
+        List<String> lore = new ArrayList<>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Ils sont incroyables !");
         meta.setLore(lore);
@@ -132,7 +132,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemMeta meta = CHESTPLATE.getItemMeta();
 
         meta.setDisplayName(ChatColor.GOLD + "God Chestplate");
-        List<String> lore = new ArrayList<String>();
+        List<String> lore = new ArrayList<>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Il est incroyables !");
         meta.setLore(lore);
@@ -153,7 +153,7 @@ public class Main extends JavaPlugin implements Listener{
         ItemMeta meta = Helmet.getItemMeta();
 
         meta.setDisplayName(ChatColor.GOLD + "God Helmet");
-        List<String> lore = new ArrayList<String>();
+        List<String> lore = new ArrayList<>();
         lore.add("");
         lore.add(ChatColor.GOLD + "Il sont incroyables !");
         meta.setLore(lore);
@@ -175,7 +175,7 @@ public class Main extends JavaPlugin implements Listener{
 
     @EventHandler
     public void onJump(PlayerMoveEvent event) {
-        Player player = (Player) event.getPlayer();
+        Player player = event.getPlayer();
         if (player.getInventory().getBoots() != null)
             if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("God Boots"))
                 if (player.getInventory().getBoots().getItemMeta().hasLore())
@@ -185,7 +185,7 @@ public class Main extends JavaPlugin implements Listener{
 
     @EventHandler
     public void SpeedEffect(PlayerMoveEvent event) {
-        Player player = (Player) event.getPlayer();
+        Player player = event.getPlayer();
         if (player.getInventory().getBoots() != null)
             if (player.getInventory().getBoots().getItemMeta().getDisplayName().contains("God Boots"))
                 if (player.getInventory().getBoots().getItemMeta().hasLore()) {
